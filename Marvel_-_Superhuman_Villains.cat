@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9631-59dd-39be-2c75" name="Marvel - Superhuman Villains" revision="1" battleScribeVersion="2.01" authorName="NeXo" authorContact="" authorUrl="http://labibliotecadealfred.blogspot.com.es/" gameSystemId="c372-4887-df6a-ad9e" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9631-59dd-39be-2c75" name="Marvel - Superhuman Villains" revision="2" battleScribeVersion="2.01" authorName="NeXo" authorContact="" authorUrl="http://labibliotecadealfred.blogspot.com.es/" gameSystemId="c372-4887-df6a-ad9e" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1696,14 +1696,14 @@
         <modifier type="set" field="name" value="ERROR: Read Requirements">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="30d8-6e29-edf8-477b" type="atMost"/>
+            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="30d8-6e29-edf8-477b" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
         <modifier type="set" field="adb5-2beb-df53-322c" value="0">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="30d8-6e29-edf8-477b" type="atMost"/>
+            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="30d8-6e29-edf8-477b" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -3305,7 +3305,7 @@
         <modifier type="set" field="hidden" value="false">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="30d8-6e29-edf8-477b" type="atLeast"/>
+            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="30d8-6e29-edf8-477b" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>

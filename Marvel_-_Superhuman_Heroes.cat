@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0702-7507-71ad-a69f" name="Marvel - Superhuman Heroes" revision="1" battleScribeVersion="2.01" authorName="NeXo" authorContact="" authorUrl="http://labibliotecadealfred.blogspot.com.es/" gameSystemId="c372-4887-df6a-ad9e" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0702-7507-71ad-a69f" name="Marvel - Superhuman Heroes" revision="2" battleScribeVersion="2.01" authorName="NeXo" authorContact="" authorUrl="http://labibliotecadealfred.blogspot.com.es/" gameSystemId="c372-4887-df6a-ad9e" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -2760,14 +2760,14 @@
         <modifier type="set" field="name" value="ERROR: Read Requirements">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b908-1fce-a898-9ca9" type="atMost"/>
+            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b908-1fce-a898-9ca9" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
         <modifier type="set" field="56e1-991e-144e-430b" value="0">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b908-1fce-a898-9ca9" type="atMost"/>
+            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b908-1fce-a898-9ca9" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -5359,7 +5359,7 @@
         <cost name="Levels" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6fef-5530-6e2d-f2b8" name="+1 to Power" book="" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="6fef-5530-6e2d-f2b8" name="+1 to Power" book="" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="4eba-8357-3109-f628" name="+1 to Power" hidden="false" profileTypeId="e661-788c-2c8a-0ac2">
           <profiles/>
@@ -5382,10 +5382,10 @@
       </rules>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b908-1fce-a898-9ca9" type="atLeast"/>
+            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b908-1fce-a898-9ca9" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>

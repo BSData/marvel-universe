@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="73eb-fffd-3a56-e85b" name="Marvel - Mutant Villains" revision="1" battleScribeVersion="2.01" authorName="NeXo" authorContact="" authorUrl="http://labibliotecadealfred.blogspot.com.es/" gameSystemId="c372-4887-df6a-ad9e" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="73eb-fffd-3a56-e85b" name="Marvel - Mutant Villains" revision="2" battleScribeVersion="2.01" authorName="NeXo" authorContact="" authorUrl="http://labibliotecadealfred.blogspot.com.es/" gameSystemId="c372-4887-df6a-ad9e" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1856,14 +1856,14 @@
         <modifier type="set" field="name" value="ERROR: Read Requirements">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e383-f7c3-1300-bd52" type="atMost"/>
+            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e383-f7c3-1300-bd52" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
         <modifier type="set" field="0d13-1a5d-2d7a-9cae" value="0">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e383-f7c3-1300-bd52" type="atMost"/>
+            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e383-f7c3-1300-bd52" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -2761,33 +2761,33 @@
   </selectionEntries>
   <entryLinks/>
   <sharedSelectionEntries>
-    <selectionEntry id="75f6-0d2e-a4f6-3eb9" name="+1 to Agility" book="" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="75f6-0d2e-a4f6-3eb9" name="+1 to Agility" book="" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="f16a-924f-2b04-74d6" name="+1 to Stamina" hidden="false" profileTypeId="e661-788c-2c8a-0ac2">
+        <profile id="f16a-924f-2b04-74d6" name="+1 to Agility" hidden="false" profileTypeId="e661-788c-2c8a-0ac2">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="6630-2a46-a888-86a9" value="This character has +1 to Stamina until the end of the game. (This doesn&apos;t modify the printed Power stat)"/>
+            <characteristic name="Description" characteristicTypeId="6630-2a46-a888-86a9" value="This character has +1 to Agility until the end of the game. (This doesn&apos;t modify the printed Power stat)"/>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="a04d-31e7-83db-4e7d" name="+1 to Stamina" hidden="false">
+        <rule id="a04d-31e7-83db-4e7d" name="+1  to Agility" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>This character has +1 to Stamina until the end of the game.</description>
+          <description>This character has +1 to Agility until the end of the game.</description>
         </rule>
       </rules>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e383-f7c3-1300-bd52" type="atLeast"/>
+            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e383-f7c3-1300-bd52" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>

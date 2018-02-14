@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42f7-360c-a5bf-eca9" name="Marvel - Cosmic Heroes" revision="1" battleScribeVersion="2.01" authorName="NeXo" authorContact="" authorUrl="http://labibliotecadealfred.blogspot.com.es/" gameSystemId="c372-4887-df6a-ad9e" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="42f7-360c-a5bf-eca9" name="Marvel - Cosmic Heroes" revision="2" battleScribeVersion="2.01" authorName="NeXo" authorContact="" authorUrl="http://labibliotecadealfred.blogspot.com.es/" gameSystemId="c372-4887-df6a-ad9e" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1100,7 +1100,7 @@
         <modifier type="set" field="name" value="ERROR: Read Requirements">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="aa2a-8afe-84fc-4265" type="atMost"/>
+            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="aa2a-8afe-84fc-4265" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -1114,7 +1114,7 @@
         <modifier type="set" field="maxInRoster" value="0.0">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="aa2a-8afe-84fc-4265" type="atMost"/>
+            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="aa2a-8afe-84fc-4265" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -2015,7 +2015,7 @@
         <cost name="Levels" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e5e1-aab1-7a1f-ff01" name="Speed +1" book="" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="e5e1-aab1-7a1f-ff01" name="Speed +1" book="" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="d493-15f9-4381-fe82" name="Speed +1" hidden="false" profileTypeId="e661-788c-2c8a-0ac2">
           <profiles/>
@@ -2030,10 +2030,10 @@
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="aa2a-8afe-84fc-4265" type="atLeast"/>
+            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="aa2a-8afe-84fc-4265" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
